@@ -2,41 +2,50 @@
     width: 950px;
     background-color: silver;
     margin: 0px auto;
+    /* post solution: padding should be added here in leiu of messing with margins */
+    /* padding: 20px */
 }
 .top-nav {
     height: 150px;
     background-color: green;
+    /* post solution: these items are redundant if padding above is added */
     border: 10px;
     border-color: silver;
     border-style: solid;
+    /* manually adding in a border is reliant on manually matchng the container color. Not efficient */
 }
 .side-nav {
     height: 300px;
     width: 200px;
     background-color: blue;
+    /* post solution: margin is redudntant if padding above is added */
     margin: 10px;
 }
 .main {
     height: 400px;
     width: 700px;
     background-color: red;
-    margin: 10px;
+    /* post solution: padding would solve the spacing issue, no need for more margins */
+    margin: 10px; /* this line can be removed */
+    /* solution: margin left to add spacing between red and blue blocks. Padding provides spacing for yellow blocks
+    margin-left:20px;
+    padding: 10px; */
 }
 .sub-content {
     height: 200px;
     width: 210px;
     background-color: yellow;
-    margin: 10px;
-    /* padding: 10px; */
+    margin: 10px; /* this line was correct */
+    /* padding: 10px; - text was not removed from testing before submission */
 }
 #advertisement {
     height: 120px;
     width: 660px;
     background-color: purple;
-    margin: 10px;
+    margin: 10px; /* this line was correct */
 }
 .row {
     /* TODO - what should go here? */
-    display:flex;
+    display:flex; /* this line was correct*/
 }
 
